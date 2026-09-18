@@ -69,7 +69,7 @@ da frota adversária
 
 - Barca
 
-  <img width="200 height="170" alt="image" src="https://github.com/user-attachments/assets/15aec701-601d-4bc5-b7a1-15b2eba565c4" />
+  <img width="200" height="170" alt="image" src="https://github.com/user-attachments/assets/15aec701-601d-4bc5-b7a1-15b2eba565c4" />
 
 
   link: https://pt.wikipedia.org/wiki/Barca
