@@ -10,6 +10,8 @@ GrupoTP06_LEI-5
 | LEI           | Lara Fernandes   | 129896 |
 | LEI           | Catarina Barata  | 131590 |
 | LEI           | Jessica Chen     | 129885 |
+| LEI           | Beatriz Afonso   | 122668 |
+
 
 
 ---
