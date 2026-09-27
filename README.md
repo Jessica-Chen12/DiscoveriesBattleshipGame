@@ -81,7 +81,7 @@ da frota adversária
 
 # Como jogar 
 
-O jogo é controlado através de comandos escritos na :
+O jogo é controlado através de comandos escritos na consola :
 
 | Comando | O que faz |
 | :--- | :--- |
