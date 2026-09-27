@@ -75,3 +75,25 @@ da frota adversária
 
 
   link: https://pt.wikipedia.org/wiki/Barca
+
+
+  ---
+
+# Como jogar 
+
+O jogo é controlado através de comandos escritos na :
+
+| Comando | O que faz |
+| :--- | :--- |
+| `nova` | Cria uma nova frota. Para cada navio indica-se o tipo, a linha, a coluna e a orientação |
+| `rajada` | Dispara uma rajada de 3 tiros, indicando a linha e a coluna de cada tiro |
+| `ver` | Mostra os tiros válidos já disparados |
+| `estado` | Mostra o estado atual da frota |
+| `mapa` | Mostra a posição de todos os navios |
+| `desisto` | Termina o jogo |
+
+**Tipos de navio:** `galeao`, `fragata`, `nau`, `caravela`, `barca`
+
+**Orientações:** `n` (norte), `s` (sul), `e` (este), `o` (oeste)
+
+Exemplo de um navio: `nau 3 4 s` coloca uma nau com início na linha 3, coluna 4, orientada para sul.
