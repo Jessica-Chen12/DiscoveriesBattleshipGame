@@ -22,7 +22,7 @@ GrupoTP06_LEI-5
 | **Batalha Naval** | **Descobrimentos** | **English** | **Dimensão** | **#Navios** |
 | :--- | :--- | :--- | :--- | :---: |
 | Porta-aviões | Galeão |  Galleon | 5 | 1 |
-| Navio de 4 canhões | Fragrata | Frigate | 4 | 1 | 
+| Navio de 4 canhões | Fragata | Frigate | 4 | 1 | 
 | Navio de 3 canhões | Nau | Carrack | 3 | 2 |
 | Navio de 2 canhões | Caravela | Caravel | 2 | 3 |
 | Submarino | Barca | Barge | 1 | 4 |
@@ -37,7 +37,7 @@ GrupoTP06_LEI-5
 * Joga-se em duas grelhas, uma para cada jogador — uma que representa a disposição dos barcos do jogador, e outra que representa a do oponente
 * Após os navios serem posicionados, cada jogador, atira três tiros (à vez) sobre a frota adversária (referindo as coordenadas dos tiros)
 * O adversário deve referir o resultado dessa
-rajada de trêes tiros, informando se acertou em um ou mais navios e de que tipo, bem como
+rajada de três tiros, informando se acertou em um ou mais navios e de que tipo, bem como
 os tiros na água
 * Cada jogador vai registando na grelha do oponente os resultados dos seus
 tiros, identificando os navios afundados
@@ -75,3 +75,25 @@ da frota adversária
 
 
   link: https://pt.wikipedia.org/wiki/Barca
+
+
+  ---
+
+# Como jogar 
+
+O jogo é controlado através de comandos escritos na consola :
+
+| Comando | O que faz |
+| :--- | :--- |
+| `nova` | Cria uma nova frota. Para cada navio indica-se o tipo, a linha, a coluna e a orientação |
+| `rajada` | Dispara uma rajada de 3 tiros, indicando a linha e a coluna de cada tiro |
+| `ver` | Mostra os tiros válidos já disparados |
+| `estado` | Mostra o estado atual da frota |
+| `mapa` | Mostra a posição de todos os navios |
+| `desisto` | Termina o jogo |
+
+**Tipos de navio:** `galeao`, `fragata`, `nau`, `caravela`, `barca`
+
+**Orientações:** `n` (norte), `s` (sul), `e` (este), `o` (oeste)
+
+Exemplo de um navio: `nau 3 4 s` coloca uma nau com início na linha 3, coluna 4, orientada para sul.
