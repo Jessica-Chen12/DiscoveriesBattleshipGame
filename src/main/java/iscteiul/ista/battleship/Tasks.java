@@ -9,11 +9,24 @@ import java.util.Scanner;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Provides console-based tasks that read user commands and drive the game.
+ * <p>
+ * The tasks are incremental versions of the game: {@link #taskA()} only tests
+ * the creation of ships, while {@link #taskD()} supports the full set of
+ * commands, including firing rounds of shots.
+ */
 public class Tasks {
     private static final Logger LOGGER = LogManager.getLogger();
 
+    /**
+     * Number of shots fired in each round.
+     */
     private static final int NUMBER_SHOTS = 3;
 
+    /**
+     * Message shown when the user leaves the game.
+     */
     private static final String GOODBYE_MESSAGE = "Bons ventos!";
 
     /**
@@ -36,7 +49,10 @@ public class Tasks {
 
     /**
      * This task tests the building up of ships: For each ship, reads positions and
-     * indicates whether the ship occupies each one of such positions or not
+     * indicates whether the ship occupies each one of such positions or not.
+     * <p>
+     * Does not accept any commands; it reads ships and positions until the
+     * input ends.
      */
     public static void taskA() {
         Scanner in = new Scanner(System.in);
@@ -51,7 +67,10 @@ public class Tasks {
     }
 
     /**
-     * This task tests the building up of fleets
+     * This task tests the building up of fleets.
+     * <p>
+     * Accepted commands: {@code nova} (create a new fleet), {@code estado}
+     * (show the fleet status) and {@code desisto} (quit).
      */
     public static void taskB() {
         Scanner in = new Scanner(System.in);
@@ -77,7 +96,10 @@ public class Tasks {
 
     /**
      * This task tests the building up of fleets and takes into consideration the
-     * possibility of cheating
+     * possibility of cheating.
+     * <p>
+     * Accepted commands: the same as {@link #taskB()}, plus {@code mapa}
+     * (show the whole fleet).
      */
     public static void taskC() {
         Scanner in = new Scanner(System.in);
@@ -105,7 +127,11 @@ public class Tasks {
     }
 
     /**
-     * This task also tests the fighting element of a round of three shots
+     * This task also tests the fighting element of a round of three shots.
+     * <p>
+     * Accepted commands: the same as {@link #taskC()}, plus {@code rajada}
+     * (fire a round of three shots) and {@code ver} (show the valid shots
+     * fired so far).
      */
     public static void taskD() {
 
